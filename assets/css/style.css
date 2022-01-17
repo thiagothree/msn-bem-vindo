@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+:root {
+  --azul: #299DE1;
+  --preto: #050708;
+}
+
+body {
+  background-image: url('../images/Intersect.png');
+  background-repeat: no-repeat;
+  background-position: 100% 110%;
+  height: 58.625rem;
+  /*height: 911px;*/
+  
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background: rgb(113,219,127);
+  background: linear-gradient(90deg, rgba(113,219,127,1) 0%, rgba(41,157,225,1) 74%);
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 6.9375rem;
+  height: 2rem;
+  margin-left: 5.625rem;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 8.625rem;
+  
+}
+
+section {
+  margin-left: 90px;
+}
+
+h1 {
+  color: var(--azul);
+  line-height: 150%;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+p {
+  color: var(--preto);
+  font-size: 1.5rem;
+  margin-top: .9375rem;
+}
+
+.buttons_download {
+  display: flex;
+  margin-top: 4.375rem;
+  width: 370px;
+  justify-content: space-between;
+}
+
+.link_app_store {
+  background-image: url('../images/app_store.png');
+  width: 170px;
+  height: 60px;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+}
+
+.link_google_play {
+  width: 170px;
+  height: 60px;
+  background-image: url('../images/google_play.png');
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+}
+
+.link_app_store:hover, .link_google_play:hover, header img:hover, .section_image_dispositivos img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.section_image_dispositivos {
+  margin-right: 107px;
+}
+
+.section_image_dispositivos img {
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+}
+
+@media (min-width: 300px) and (max-width: 399.98px) {
+  
+  body {
+    height: 800px;
+    background-position: 100% 110%;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  header img {
+    width: 6.9375rem;
+    height: 2rem;
+    margin-left: 30px;
+  }
+
+  .info {
+    margin-left: 30px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  p {
+    color: var(--preto);
+    font-size: 20px;
+    margin-top: .9375rem;
+    
+  }
+  
+  b {
+    display: block;
+  }
+
+  .buttons_download {
+    display: block;
+    margin-top: 100px;
+  }
+
+
+  .section_image_dispositivos {
+    display: none;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 499.98px) {
+  body {
+    height: 800px;
+    
+  }
+
+  header {
+    width: 100%;
+  }
+
+  header img {
+    width: 6.9375rem;
+    height: 2rem;
+    margin-left: 30px;
+  }
+
+  .info {
+    margin-left: 30px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  p {
+    color: var(--preto);
+    font-size: 20px;
+    margin-top: .9375rem;
+    
+  }
+  
+  b {
+    display: block;
+  }
+
+  .buttons_download {
+    display: block;
+    margin-top: 100px;
+  }
+
+
+  .section_image_dispositivos {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1469.98px) {
+  body {
+    height: 100%;
+    
+  }
+
+  header {
+    width: 100%;
+  }
+
+  header img {
+    width: 6.9375rem;
+    height: 2rem;
+    margin-left: 90px;
+    
+  }
+
+  main {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 6.25rem;
+  }
+
+  .info {
+    order: 1;
+    margin-left: 30px;
+  
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  p {
+    color: var(--preto);
+    font-size: 20px;
+    margin-top: .9375rem;
+  }
+  
+  b {
+    display: block;
+  }
+
+  .section_image_dispositivos img {
+    width: 100%;
+    order: 0;
+  }
+}
+@media (min-width: 1470px) and (max-width: 1900px) {
+  body {
+    background-position: 100% 110%;
+    height: 58.625rem;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  header img {
+    width: 6.9375rem;
+    height: 2rem;
+    margin-left: 90px;
+  }
+
+  main {
+    justify-content: space-around;
+  }
+
+  .info {
+    margin-left: 30px;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  p {
+    color: var(--preto);
+    font-size: 20px;
+    margin-top: .9375rem;
+  }
+  
+  b {
+    display: block;
+  }
+
+  .section_image_dispositivos img {
+    width: 100%;
+  }
+}
